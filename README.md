@@ -100,9 +100,9 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 ---
 
-## 🔧 Installation
+# Installation
 
-### Step 1: Clone or Download the Project
+# Step 1: Clone or Download the Project
 ```bash
 git clone https://github.com/yourname/audio-threat-detection.git
 cd audio-threat-detection
@@ -119,7 +119,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### Step 3: Install Dependencies
+# Step 3: Install Dependencies
 ```bash
 # Core ML packages
 pip install torch transformers soundfile librosa noisereduce pydub
@@ -137,7 +137,7 @@ pip install flask flask-cors
 pip install numpy scipy
 ```
 
-### Step 4: Install FFmpeg (Required for Audio Conversion)
+# Step 4: Install FFmpeg (Required for Audio Conversion)
 
 **Windows (using Chocolatey):**
 ```bash
@@ -154,19 +154,19 @@ choco install ffmpeg
 brew install ffmpeg
 ```
 
-**Linux:**
+*Linux:*
 ```bash
 sudo apt-get install ffmpeg
 ```
 
-### Step 5: Create Project Directories
+# Step 5: Create Project Directories
 ```bash
 mkdir uploads reports templates analysis_reports
 ```
 
 ---
 
-##  Project Structure
+#  Project Structure
 
 ```
 audio-threat-detection/
@@ -190,9 +190,9 @@ audio-threat-detection/
 
 ---
 
-##  Configuration
+#  Configuration
 
-### 1. Set HuggingFace Token
+ 1. Set HuggingFace Token
 
 Speaker diarization requires a HuggingFace token. Get yours at https://huggingface.co/settings/tokens
 
@@ -205,7 +205,7 @@ Also accept the diarization model terms at:
 - https://huggingface.co/pyannote/speaker-diarization-3.1
 - https://huggingface.co/pyannote/segmentation-3.0
 
-### 2. Change Whisper Model (Optional)
+ 2. Change Whisper Model (Optional)
 
 To use a smaller/faster model, edit `threat_analysis.py`:
 ```python
@@ -219,15 +219,15 @@ MODEL_NAME = "openai/whisper-large-v3" # 3 GB  - Best (default)
 
 ---
 
-##  Usage
+#  Usage
 
-### Option A: Command-Line Interface
+# Option A: Command-Line Interface
 
 ```bash
 python threat_analysis.py
 ```
 
-**Main Menu:**
+Main Menu:
 ```
   AUDIO THREAT DETECTION SYSTEM - MAIN MENU
 ================================================================================
@@ -241,7 +241,7 @@ python threat_analysis.py
 8. Exit
 ```
 
-**Example Analysis:**
+Example Analysis:
 ```bash
 # Select 1 → Enter file path → Select translation language
 
@@ -258,7 +258,7 @@ TRANSLATION OPTIONS
 Select language: 4   ← Translates to Hindi
 ```
 
-### Option B: Web Dashboard
+# Option B: Web Dashboard
 
 ```bash
 # Start the Flask server
@@ -268,12 +268,12 @@ python app.py
 http://localhost:5000
 ```
 
-**Web Dashboard Tabs:**
-- **Analyze Audio** - Upload and analyze files
-- **Manage Keywords** - Add threat keywords via UI
-- **Manage Codewords** - Add codewords via UI
-- **Manage Slang** - Add slang terms via UI
-- **View Results** - See analysis results with charts
+Web Dashboard Tabs:
+- Analyze Audio - Upload and analyze files
+- Manage Keywords - Add threat keywords via UI
+- Manage Codewords - Add codewords via UI
+- Manage Slang - Add slang terms via UI
+- View Results - See analysis results with charts
 
 ---
 
