@@ -42,20 +42,20 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 | Feature | Description |
 |---------|-------------|
-| 🎤 Audio Conversion | Supports MP3, WAV, M4A, FLAC, OGG, MP4, AVI, MOV |
-| 👥 Speaker Diarization | Identifies and separates unique speakers |
-| 📝 Transcription | Multilingual speech-to-text via Whisper |
-| 🌍 Translation | Translate to 10 languages (Spanish, French, Hindi, etc.) |
-| ⚠️ Threat Detection | 50+ built-in threat keywords across 7 categories |
-| 🕵️ Codeword Detection | Detects innocent phrases with hidden meanings |
-| 🗣️ Slang Detection | 14+ built-in criminal/gang slang terms |
-| 😊 Emotion Analysis | Detects 7 emotions (joy, anger, fear, sadness, etc.) |
-| 💭 Sentiment Analysis | Positive, Neutral, Negative classification |
-| ☣️ Toxicity Detection | 6 toxicity categories via BERT |
-| 🎭 Sarcasm Detection | Reduces false positives from sarcastic content |
-| 🧑‍💻 Human Feedback | Approve, reject, or modify detected keywords |
-| 📊 Report Generation | JSON + Text reports with full analysis |
-| 🖥️ Web Dashboard | Browser-based frontend with Flask API |
+|  Audio Conversion | Supports MP3, WAV, M4A, FLAC, OGG, MP4, AVI, MOV |
+|  Speaker Diarization | Identifies and separates unique speakers |
+|  Transcription | Multilingual speech-to-text via Whisper |
+|  Translation | Translate to 10 languages (Spanish, French, Hindi, etc.) |
+|  Threat Detection | 50+ built-in threat keywords across 7 categories |
+|  Codeword Detection | Detects innocent phrases with hidden meanings |
+|  Slang Detection | 14+ built-in criminal/gang slang terms |
+|  Emotion Analysis | Detects 7 emotions (joy, anger, fear, sadness, etc.) |
+|  Sentiment Analysis | Positive, Neutral, Negative classification |
+|  Toxicity Detection | 6 toxicity categories via BERT |
+| Sarcasm Detection | Reduces false positives from sarcastic content |
+|  Human Feedback | Approve, reject, or modify detected keywords |
+|  Report Generation | JSON + Text reports with full analysis |
+|  Web Dashboard | Browser-based frontend with Flask API |
 
 ---
 
@@ -76,7 +76,7 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 ---
 
-## 💻 System Requirements
+##  System Requirements
 
 ### Minimum
 - **OS:** Windows 10 / Ubuntu 20.04 / macOS 11
