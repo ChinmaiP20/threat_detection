@@ -4,7 +4,7 @@
 
 ---
 
-##  Table of Contents
+#  Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -22,11 +22,11 @@
 
 ---
 
-##  Overview
+  Overview
 
 The **Audio Threat Detection System** is a comprehensive AI-powered tool designed to analyze audio files for potential threats, suspicious language, codewords, and emotional indicators. It combines multiple state-of-the-art machine learning models to provide a full threat assessment with human review capabilities.
 
-### What It Does
+ What It Does
 - Converts audio from any format to MP3
 - Identifies and separates multiple speakers
 - Transcribes speech with automatic language detection
@@ -38,7 +38,7 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 ---
 
-##  Features
+  Features
 
 | Feature | Description |
 |---------|-------------|
@@ -59,7 +59,7 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 ---
 
-## 🤖 AI Models Used
+ AI Models Used
 
 | Model | Purpose | Size | Parameters |
 |-------|---------|------|------------|
@@ -76,9 +76,9 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 
 ---
 
-##  System Requirements
+  System Requirements
 
-### Minimum
+ Minimum
 - **OS:** Windows 10 / Ubuntu 20.04 / macOS 11
 - **CPU:** Intel i5 / AMD Ryzen 5
 - **RAM:** 8 GB
@@ -86,13 +86,13 @@ The **Audio Threat Detection System** is a comprehensive AI-powered tool designe
 - **Python:** 3.8 or higher
 - **Internet:** Required for first-time model downloads
 
-### Recommended
+ Recommended
 - **CPU:** Intel i7 / AMD Ryzen 7
 - **RAM:** 16 GB
 - **GPU:** NVIDIA RTX 3060 (6 GB VRAM) or better
 - **Storage:** 15 GB free SSD space
 
-### Optimal
+ Optimal
 - **CPU:** Intel i9 / AMD Ryzen 9
 - **RAM:** 32 GB
 - **GPU:** NVIDIA RTX 4080 (12 GB VRAM) or better
@@ -306,7 +306,7 @@ Web Dashboard Tabs:
 }
 ```
 
-### Risk Levels
+ Risk Levels
 
 | Level | Score Range | Description |
 |-------|-------------|-------------|
@@ -318,7 +318,7 @@ Web Dashboard Tabs:
 
 ---
 
-## 🧑‍💻 Human Feedback System
+ Human Feedback System
 
 When using **Option 1 (Analysis with Feedback)**, you are prompted to review each detection:
 
@@ -348,7 +348,7 @@ All feedback is saved to `keyword_feedback.json` and viewable via **Menu Option 
 
 ---
 
-##  Translation Support
+  Translation Support
 
 Supported target languages:
 
@@ -369,9 +369,9 @@ Translation models are downloaded (~300 MB each) only when first used.
 
 ---
 
-##  Threat Categories
+  Threat Categories
 
-### Built-in Threat Keywords (14 default, expandable)
+ Built-in Threat Keywords (14 default, expandable)
 
 | Category | Examples |
 |----------|---------|
@@ -413,7 +413,7 @@ choco install ffmpeg
 ffmpeg -version
 ```
 
-### CUDA/GPU Not Detected
+ CUDA/GPU Not Detected
 ```bash
 # Check CUDA availability
 python -c "import torch; print(torch.cuda.is_available())"
@@ -422,14 +422,14 @@ python -c "import torch; print(torch.cuda.is_available())"
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-### Diarization Authentication Error
+ Diarization Authentication Error
 ```
 # Ensure you have:
 # 1. Valid HF_TOKEN in threat_analysis.py
 # 2. Accepted model terms at huggingface.co/pyannote/speaker-diarization-3.1
 ```
 
-### Out of Memory Error
+ Out of Memory Error
 ```python
 # Use smaller Whisper model
 MODEL_NAME = "openai/whisper-base"
@@ -438,7 +438,7 @@ MODEL_NAME = "openai/whisper-base"
 speakers = []
 ```
 
-### Port Already in Use (Web Server)
+ Port Already in Use (Web Server)
 ```python
 # In app.py, change port:
 app.run(debug=True, host='0.0.0.0', port=5001)
@@ -446,9 +446,9 @@ app.run(debug=True, host='0.0.0.0', port=5001)
 
 ---
 
-# Performance Benchmarks
+ Performance Benchmarks
 
-### Processing Time (5-minute audio file)
+ Processing Time (5-minute audio file)
 
 | Hardware | Transcription | Full Pipeline |
 |----------|--------------|---------------|
@@ -469,7 +469,7 @@ app.run(debug=True, host='0.0.0.0', port=5001)
 
 ---
 
-##  Dependencies
+  Dependencies
 
 ```
 torch
@@ -494,14 +494,14 @@ pip install torch transformers soundfile librosa noisereduce pydub pyannote.audi
 
 ---
 
-##  License
+  License
 
 This project is for educational and research purposes only.  
 All AI models used are open-source and available on Hugging Face.
 
 ---
 
-# Acknowledgements
+ Acknowledgements
 
 - [OpenAI Whisper](https://github.com/openai/whisper) - Speech recognition
 - [PyAnnote Audio](https://github.com/pyannote/pyannote-audio) - Speaker diarization
